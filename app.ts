@@ -157,3 +157,64 @@ function adminData(ExtendObj:Admin){
 
 adminData({name:"Ajay",email:"Aman@gmail.com",password:"186012",admin:true,IsActive:false});
 
+
+//# two interface areof same name are murged and form a single interface single intr face of same name
+
+interface name{
+  name:string
+}
+interface name{
+  In_Roll:string
+}
+
+function data(objs4:name){
+}
+
+//!-------------type Aliases ==> make custom variable------------------
+
+type sankhya=number;
+
+let as:sankhya=5
+
+//----------
+let xa:number | string | null=3  // this is look sence like little bit 
+
+//? by solving this problem you use type aliases means to make custom variable 
+
+type value=string | number | null ;
+
+let ea: value=5
+
+
+
+//----------
+
+type arg=string |null
+
+function abxy(obj:arg){
+  // means this function accept the value of only string and null type
+}
+
+//! abxy(true)// this true is not allowed for the type 
+
+//? union and intersection  ( | )=> this is called union.....
+
+let y:string | number;
+
+
+//? intersection type....
+
+type Users={
+  name:string,
+  email:string,
+  gender?:string
+}
+type Admins=Users & {
+  getDetails(Users:string):void
+}
+
+function adse(ax:Admin){
+}
+
+// abcd({})
+

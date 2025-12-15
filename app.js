@@ -85,4 +85,19 @@ function adminData(ExtendObj) {
     console.table(ExtendObj);
 }
 adminData({ name: "Ajay", email: "Aman@gmail.com", password: "186012", admin: true, IsActive: false });
+function data(objs4) {
+}
+let as = 5;
+//----------
+let xa = 3; // this is look sence like little bit 
+let ea = 5;
+function abxy(obj) {
+    // means this function accept the value of only string and null type
+}
+//! abxy(true)// this true is not allowed for the type 
+//? union and intersection  ( | )=> this is called union.....
+let y;
+function adse(ax) {
+}
+// abcd({})
 //# sourceMappingURL=app.js.map
