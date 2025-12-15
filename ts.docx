@@ -1,0 +1,33 @@
+#basic data type primitive and reference 
+a = [1, 2, 3, 4, 5];
+# sourceMappingURL=app.js.map
+
+b aakhri member hata do =[1,2,3,4]
+now a = [1,2,3,4] ??? why ...
+
+//! [],{},() inka use kea to too unka type hota hai reference value ka type hua 
+
+* => joo v value main change hoga woo parent pe show hoga....
+
+* => a=true  // primitive
+* => var a=69 // primitive 
+* => var b={}
+* => var c=()
+* => var d=[]
+
+
+// advanta ge of prrimitive => will to copy directly......
+
+// non primitive reference nt copy,directly other method to cop this
+
+//-------------------------
+# type inference 
+# automatiic detecrbthe variable type 
+# type Anotation => says that give type 
+Ex:- let name:string="Ajay"
+
+
+//--------------INTERFACE AND TYPE ALIASES
+
+Defining interfaces:- using interfaces defines the shape of object 
+
