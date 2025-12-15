@@ -140,5 +140,13 @@ newUser({name:"Ajay",email:"ajay@gmail.com",password:"12sdwe3"})
 //!!! ----------extend inhetit the featue if othe interface of object
 
 interface userExtend{
-  
+  name:string,
+  emai:string,
+  password:string,
+  gender?:string
+}
+
+interface Admin extends userExtend{
+   admin:boolean,
+   IsActive:boolean
 }
