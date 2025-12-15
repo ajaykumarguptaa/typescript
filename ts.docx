@@ -20,6 +20,19 @@ now a = [1,2,3,4] ??? why ...
 
 // non primitive reference nt copy,directly other method to cop this
 
+
+//* Iran kielu Bayer Mehta's Kendra Propertiesorvsky Value Said Karijati Hai. Or jahabi use Karna Ho Hum Uska Uz Kar Sakte
+
+
+//!Enum ka use tab hota hai jab hume pata ho ki kisi variable ke liye sirf kuch fixed values hi allowed hongi.
+
+//{Enum (Enumeration) TypeScript ka ek feature hai jiska use hum fixed set of named values ko define karne ke liye karte hain.}
+// Isse code zyada readable, safe aur error-free ho jata hai.
+
+//👉 Simple words me:
+//Enum = limited aur predefined values ka group
+
+
 //-------------------------
 # type inference 
 # automatiic detecrbthe variable type 

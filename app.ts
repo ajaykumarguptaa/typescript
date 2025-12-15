@@ -33,6 +33,14 @@ let arr3: [string , number]
 //* Iran kielu Bayer Mehta's Kendra Propertiesorvsky Value Said Karijati Hai. Or jahabi use Karna Ho Hum Uska Uz Kar Sakte
 
 
+//!Enum ka use tab hota hai jab hume pata ho ki kisi variable ke liye sirf kuch fixed values hi allowed hongi.
+
+//{Enum (Enumeration) TypeScript ka ek feature hai jiska use hum fixed set of named values ko define karne ke liye karte hain.}
+// Isse code zyada readable, safe aur error-free ho jata hai.
+
+//👉 Simple words me:
+//Enum = limited aur predefined values ka group
+
  enum UserRoles{
   ADMIN="admin",
   GUST="guest",
@@ -49,5 +57,88 @@ enum StatusCode{
 }
 
 
+const enum HttpMethod {
+  GET,
+  POST,
+  PUT,
+  DELETE
+}
+
+let method = HttpMethod.GET;
+
+
+
+enum OrderStatus {
+  Pending = "PENDING",
+  Shipped = "SHIPPED",
+  Delivered = "DELIVERED"
+}
+
+function checkStatus(status: OrderStatus) {
+  if (status === OrderStatus.Delivered) {
+    console.log("Order delivered");
+  }
+}
+
+checkStatus(OrderStatus.Pending);
+
+
+
+enum UserRole {
+  Admin = "ADMIN",
+  User = "USER",
+  Guest = "GUEST"
+}
+
+let role: UserRole = UserRole.Admin;
+console.log(role); // ADMIN
+
+
+
+
+
+enum Direction {
+  Up,
+  Down,
+  Left,
+  Right
+}
+
+let move: Direction = Direction.Up;
+console.log(move); // 0
+
+
+
 //!-------type interfaces 
 //? defines the shape of an object
+
+interface User{
+  name: string,
+  email:string,
+  password:string,
+}
+function abcd(obj:User){
+
+}
+abcd({name:"ajay",email:"ajay@gamil.com",password:"1234567"})
+
+
+interface NewUser{
+    name:string,
+    email:string,
+    password:string,
+    gender?:string //optional
+}
+
+function newUser(obj1:NewUser){
+ return console.table(obj1)
+}
+newUser({name:"Ajay",email:"ajay@gmail.com",password:"12sdwe3"})
+
+
+
+//!!! ----------extend inhetit the featue if othe interface of object
+
+interface userExtend{
+  
+}
