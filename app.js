@@ -81,4 +81,8 @@ function newUser(obj1) {
     return console.table(obj1);
 }
 newUser({ name: "Ajay", email: "ajay@gmail.com", password: "12sdwe3" });
+function adminData(ExtendObj) {
+    console.table(ExtendObj);
+}
+adminData({ name: "Ajay", email: "Aman@gmail.com", password: "186012", admin: true, IsActive: false });
 //# sourceMappingURL=app.js.map

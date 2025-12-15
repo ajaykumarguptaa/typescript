@@ -141,7 +141,7 @@ newUser({name:"Ajay",email:"ajay@gmail.com",password:"12sdwe3"})
 
 interface userExtend{
   name:string,
-  emai:string,
+  email:string,
   password:string,
   gender?:string
 }
@@ -150,3 +150,10 @@ interface Admin extends userExtend{
    admin:boolean,
    IsActive:boolean
 }
+
+function adminData(ExtendObj:Admin){
+  console.table(ExtendObj)
+}
+
+adminData({name:"Ajay",email:"Aman@gmail.com",password:"186012",admin:true,IsActive:false});
+

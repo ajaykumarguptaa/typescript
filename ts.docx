@@ -44,3 +44,4 @@ Ex:- let name:string="Ajay"
 
 Defining interfaces:- using interfaces defines the shape of object 
 
+//# two interface areof same name are murged and form a single interface single intr face of same name
