@@ -72,3 +72,4 @@ class Music{
 
 const music1=new Music("jai jai shyama jai jai shyma jai jai shree vrindavan dham","guru Maharaj","moksh","5 mint","yes",)
 console.table(music1)
+
