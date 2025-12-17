@@ -132,7 +132,8 @@ console.log("\n extend the property of parent class \n\n")
 class NewBottle {
   public name: string;
   protected founderName: number;
-  protected free=true
+  protected free:boolean=true;
+  private findme:string="koun create kea hai"
 
   constructor(name: string, founderName: number) {
     this.name = name;
@@ -151,6 +152,8 @@ class MetalBottleMaker extends NewBottle {
   getValue() {
     console.log(this.name);        
     console.log(this.founderName);  
+    console.log(this.free)
+    // console.log(this.findme)
   }
 }
 

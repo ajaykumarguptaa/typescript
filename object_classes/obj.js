@@ -123,6 +123,7 @@ class NewBottle {
     name;
     founderName;
     free = true;
+    findme = "koun create kea hai";
     constructor(name, founderName) {
         this.name = name;
         this.founderName = founderName;
@@ -137,6 +138,8 @@ class MetalBottleMaker extends NewBottle {
     getValue() {
         console.log(this.name);
         console.log(this.founderName);
+        console.log(this.free);
+        // console.log(this.findme)
     }
 }
 let metalBottle = new MetalBottleMaker("Tumbler", 1990, 55000);
