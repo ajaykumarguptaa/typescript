@@ -76,4 +76,70 @@ class Music {
 }
 const music1 = new Music("jai jai shyama jai jai shyma jai jai shree vrindavan dham", "guru Maharaj", "moksh", "5 mint", "yes");
 console.table(music1);
+//! this key word....
+console.log("This key word..................................\n\n");
+class ABcd {
+    name = "ajay";
+    changeSomeStuff() {
+        console.log(this.name);
+        this.changeSomeMoreStuff();
+    }
+    changeSomeMoreStuff() {
+        console.log("hey");
+    }
+}
+const onjs = new ABcd();
+console.log(onjs);
+//!   classes Object and Public & Private Access Modifier
+console.log("\n\nclasses Object and Public & Private Access Modifier\n");
+// console.log("* Public");
+console.log("\n1. protected\n\n");
+class BottleMaker {
+    name;
+    constructor(name) {
+        this.name = name;
+    }
+}
+const Boottle = new BottleMaker("trumbler");
+// Boottle.name="water bottel"
+console.log(Boottle);
+console.log("\n2. protected\n\n");
+class BottleMAker2 {
+    name;
+    constructor(name) {
+        this.name = name;
+        this.name = name;
+    }
+    changing() {
+        this.name = "ajay";
+    }
+}
+let b1 = new BottleMAker2("Milton");
+console.log(b1);
+b1.changing();
+console.log(b1);
+console.log("\n extend the property of parent class \n\n");
+class NewBottle {
+    name;
+    founderName;
+    free = true;
+    constructor(name, founderName) {
+        this.name = name;
+        this.founderName = founderName;
+    }
+}
+class MetalBottleMaker extends NewBottle {
+    price;
+    constructor(name, founderName, price) {
+        super(name, founderName);
+        this.price = price;
+    }
+    getValue() {
+        console.log(this.name);
+        console.log(this.founderName);
+    }
+}
+let metalBottle = new MetalBottleMaker("Tumbler", 1990, 55000);
+console.table(metalBottle);
+metalBottle.getValue();
 //# sourceMappingURL=obj.js.map
