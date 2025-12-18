@@ -145,4 +145,19 @@ class MetalBottleMaker extends NewBottle {
 let metalBottle = new MetalBottleMaker("Tumbler", 1990, 55000);
 console.table(metalBottle);
 metalBottle.getValue();
+console.log("\nRead only in object....................\n");
+class Users {
+    name;
+    constructor(name) {
+        this.name = name;
+        this.name = name;
+    }
+    tryToChangeName(name) {
+        this.name = name;
+    }
+}
+const changeName = new Users("ajay");
+console.log(changeName);
+changeName.tryToChangeName("aman");
+console.log(changeName.name);
 //# sourceMappingURL=obj.js.map
