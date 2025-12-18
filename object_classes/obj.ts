@@ -183,10 +183,8 @@ console.log(changeName.name)
 console.log("\n Optional property......\n");
 
 class Users2{
-       public name:string;
-       public age:number;
-       public readonly gender:string
-  constructor(name:string,age:number,gender:string){
+  //? parametrised constructor.....
+  constructor(public name:string, public age:number, public readonly gender:string){
       this.name=name;
       this.age=age;
       this.gender=gender
@@ -195,3 +193,29 @@ class Users2{
 
 let user=new Users2("ajay",21,"female")
 console.table(user)
+
+
+
+console.log("\n Getter And Setter ..............\n");
+
+console.log("\n\n Getter..............\n");
+
+class User3{
+  constructor(public name:string, public age:number){
+    this.name=name;
+    this.age=age
+  }
+  getName(){
+    return(
+      console.log("Getter Method Work",this.age,this.name)
+    )
+  }
+
+  setName(name:string){
+    this.name=name
+  }
+}
+const new_User=new User3("Aman",45)
+console.log(new_User.getName())
+new_User.setName("Ajay kumar gupta")
+console.log(new_User.name)

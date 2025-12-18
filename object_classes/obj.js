@@ -165,7 +165,11 @@ class Users2 {
     name;
     age;
     gender;
+    //? parametrised constructor.....
     constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -173,4 +177,26 @@ class Users2 {
 }
 let user = new Users2("ajay", 21, "female");
 console.table(user);
+console.log("\n Getter And Setter ..............\n");
+console.log("\n\n Getter..............\n");
+class User3 {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.name = name;
+        this.age = age;
+    }
+    getName() {
+        return (console.log("Getter Method Work", this.age, this.name));
+    }
+    setName(name) {
+        this.name = name;
+    }
+}
+const new_User = new User3("Aman", 45);
+console.log(new_User.getName());
+new_User.setName("Ajay kumar gupta");
+console.log(new_User.name);
 //# sourceMappingURL=obj.js.map
