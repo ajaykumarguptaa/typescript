@@ -180,3 +180,18 @@ changeName.tryToChangeName("aman")
 console.log(changeName.name)
 
 
+console.log("\n Optional property......\n");
+
+class Users2{
+       public name:string;
+       public age:number;
+       public readonly gender:string
+  constructor(name:string,age:number,gender:string){
+      this.name=name;
+      this.age=age;
+      this.gender=gender
+  }
+}
+
+let user=new Users2("ajay",21,"female")
+console.table(user)

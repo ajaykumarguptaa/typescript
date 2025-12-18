@@ -160,4 +160,17 @@ const changeName = new Users("ajay");
 console.log(changeName);
 changeName.tryToChangeName("aman");
 console.log(changeName.name);
+console.log("\n Optional property......\n");
+class Users2 {
+    name;
+    age;
+    gender;
+    constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+}
+let user = new Users2("ajay", 21, "female");
+console.table(user);
 //# sourceMappingURL=obj.js.map
