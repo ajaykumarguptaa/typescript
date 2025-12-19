@@ -207,4 +207,15 @@ console.log(new_User.name);
 new_User.name = "aman gupta";
 console.log(new_User.name);
 console.log("\n Static mamber ..............\n");
+console.log("\n if we use static in any class then we use any object without instintiated Math.pi no need to new key word \n");
+class statics {
+    static version = 68.5;
+    static getRendomNumber() {
+        return Math.floor(Math.random() * 9999);
+    }
+}
+console.log(statics.version);
+console.log(statics.getRendomNumber());
+const staticss = new statics;
+console.log(statics.getRendomNumber());
 //# sourceMappingURL=obj.js.map

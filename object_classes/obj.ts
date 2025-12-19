@@ -231,4 +231,26 @@ console.log(new_User.name)
 
 console.log("\n Static mamber ..............\n");
 
+console.log("\n if we use static in any class then we use any object without instintiated Math.pi no need to new key word \n");
+
+
+class statics{
+  static version=68.5;
+
+  static getRendomNumber():number{
+    return Math.floor(Math.random()*9999)
+  }
+}
+
+console.log(statics.version);
+console.log(statics.getRendomNumber())
+
+const staticss=new statics
+
+console.log(statics.getRendomNumber())
+
+
+//! abstract clases
+console.log("\n Abstract classes ..............\n");
+
 
