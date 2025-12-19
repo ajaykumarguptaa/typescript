@@ -180,23 +180,31 @@ console.table(user);
 console.log("\n Getter And Setter ..............\n");
 console.log("\n\n Getter..............\n");
 class User3 {
-    name;
+    _name;
     age;
-    constructor(name, age) {
-        this.name = name;
+    constructor(_name, age) {
+        this._name = _name;
         this.age = age;
-        this.name = name;
+        this._name = _name;
         this.age = age;
     }
-    getName() {
-        return (console.log("Getter Method Work", this.age, this.name));
+    // getName(){
+    //   return(
+    //     console.log("Getter Method Work",this.age,this.name)
+    //   )
+    // }
+    get name() {
+        return this._name;
     }
-    setName(name) {
-        this.name = name;
+    set name(name) {
+        this._name = name;
     }
 }
 const new_User = new User3("Aman", 45);
-console.log(new_User.getName());
-new_User.setName("Ajay kumar gupta");
+// console.log(new_User.getName())
+// new_User.setName("Ajay kumar gupta")
 console.log(new_User.name);
+new_User.name = "aman gupta";
+console.log(new_User.name);
+console.log("\n Static mamber ..............\n");
 //# sourceMappingURL=obj.js.map

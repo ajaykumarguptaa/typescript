@@ -201,21 +201,34 @@ console.log("\n Getter And Setter ..............\n");
 console.log("\n\n Getter..............\n");
 
 class User3{
-  constructor(public name:string, public age:number){
-    this.name=name;
+  constructor(public _name:string, public age:number){
+    this._name=_name;
     this.age=age
   }
-  getName(){
-    return(
-      console.log("Getter Method Work",this.age,this.name)
-    )
+  // getName(){
+  //   return(
+  //     console.log("Getter Method Work",this.age,this.name)
+  //   )
+  // }
+  get name(){
+    return this._name
   }
 
-  setName(name:string){
-    this.name=name
-  }
+    set name(name:string){
+      this._name=name
+    }
+  // setName(name:string){
+  //   this._name=name
+  // }
 }
 const new_User=new User3("Aman",45)
-console.log(new_User.getName())
-new_User.setName("Ajay kumar gupta")
+// console.log(new_User.getName())
+// new_User.setName("Ajay kumar gupta")
 console.log(new_User.name)
+new_User.name="aman gupta"
+console.log(new_User.name)
+
+
+console.log("\n Static mamber ..............\n");
+
+
